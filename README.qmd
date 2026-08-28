@@ -57,11 +57,13 @@ Code in this project is licensed under the [MIT License](LICENSE-MIT.md).
 
 For a list of changes, see our [changelog](CHANGELOG.md) page.
 
+::: content-hidden
+<!-- TODO: Update this once it's published. -->
 ## Citing
 
 If you use this package in your work, please cite it as follows:
 
-```{python}
+```python
 #| output: asis
 
 !uvx --quiet cffconvert --format apalike
@@ -69,6 +71,7 @@ If you use this package in your work, please cite it as follows:
 
 Or as a BibTeX entry:
 
-```{python}
+```python
 !uvx --quiet cffconvert --format bibtex
 ```
+:::
