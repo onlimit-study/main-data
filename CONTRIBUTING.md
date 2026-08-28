@@ -3,8 +3,8 @@
 ## :bug: Issues and bugs
 
 The easiest way to contribute is to report issues or bugs that you might find
-while using main-data. You can do this by creating a new issue on our
-GitHub repository.
+while using main-data. You can do this by creating a new issue on our GitHub
+repository.
 
 ## :pencil2: Adding or modifying content
 
@@ -20,9 +20,9 @@ manage our project, such as to run checks on the data package and build the
 website. Both the uv and justfile websites have a more detailed guide on using
 uv, but below are some simple instructions to get you started.
 
-It's easiest to first
-[install uv](https://docs.astral.sh/uv/getting-started/installation/) and then
-install justfile with uv. Once you've installed uv, install justfile by running:
+It's easiest to first [install
+uv](https://docs.astral.sh/uv/getting-started/installation/) and then install
+justfile with uv. Once you've installed uv, install justfile by running:
 
 ```bash
 uv tool install rust-just
@@ -31,7 +31,7 @@ uv tool install rust-just
 We keep all our development workflows in the `justfile`, so you can explore it
 to see what commands are available. To see a list of commands available, run:
 
-``` bash
+```bash
 just
 ```
 
@@ -43,8 +43,7 @@ just <recipe-name>
 
 As you contribute, make sure your changes will pass our checks by opening a
 terminal so that the working directory is the root of this project
-(`main-data/`) and running our recipes. Some recipes to run
-regularly are:
+(`main-data/`) and running our recipes. Some recipes to run regularly are:
 
 ```bash
 just check-all
@@ -60,10 +59,10 @@ And once you're ready to create a pull request, you run:
 just run-all
 ```
 
-When committing changes, please try to follow
-[Conventional Commits](https://decisions.seedcase-project.org/why-conventional-commits/)
-as Git messages. Using this convention allows us to be able to automatically
-create a release based on the commit message by using
+When committing changes, please try to follow [Conventional
+Commits](https://decisions.seedcase-project.org/why-conventional-commits/) as
+Git messages. Using this convention allows us to be able to automatically create
+a release based on the commit message by using
 [Cocogitto](https://decisions.seedcase-project.org/why-semantic-release-with-cocogitto/).
 If you don't use Conventional Commits when making a commit, we will revise the
 pull request title to follow that format, as we use squash merges when merging
@@ -77,33 +76,34 @@ This is a brief description of some of the files in this repository.
 ### Data package content
 
 - `src/`: The folder you should put all your Python files in, as this data
-  package is structured like a Python package. The organization of the folder
-  is up to you, but we recommend following a structure commonly found in data
+  package is structured like a Python package. The organization of the folder is
+  up to you, but we recommend following a structure commonly found in data
   engineering projects, e.g. in
   [dbt](https://docs.getdbt.com/docs/building-a-dbt-project/folder-structure)
-  projects. We recommend that Python files only contain functions and classes for
-  data processing, while the actual data processing is done in
-  `main.py` to keep all the processing steps in one place.
+  projects. We recommend that Python files only contain functions and classes
+  for data processing, while the actual data processing is done in `main.py` to
+  keep all the processing steps in one place.
   - Use the naming convention
-    `src/main_data/<data-source>/<data-resource>_(data|metadata).py`
-    for your Python files. `data-source` is the source that your data comes from
-    (see `raw/` below) and `data-resource` is the name of the (eventual) data
+    `src/main_data/<data-source>/<data-resource>_(data|metadata).py` for your
+    Python files. `data-source` is the source that your data comes from (see
+    `raw/` below) and `data-resource` is the name of the (eventual) data
     resource.
   - Utility or common functions should be kept in a `src/main_data/common/`
     folder.
-- `raw/`: The folder for all your raw data files. These
-  data files should come directly from their source locations (e.g. a database,
-  an API, or a downloaded file) without having been modified in any way. Name the
-  files using the convention: `raw/<data-source>/<timestamp>.csv` (or whatever
-  format your data is in).
-- `staging/`: The folder where processed data files are stored after they've been
-  tidied from `raw/` but before they've been converted into a resource in `resources/`.
-  The files in this folder can be used to actually create the resource
-  properties, as they will all be in a tidy format with their data types and values
-  more or less in their final form. Name the files using the convention:
-  `staging/<data-source>/<data-resource>/<timestamp>.parquet` (Sprout requires Parquet).
-- `resources/`: The folder with your data resources. Each resource has
-  its own folder and a `data.parquet` file containing all resource data contained
+- `raw/`: The folder for all your raw data files. These data files should come
+  directly from their source locations (e.g. a database, an API, or a downloaded
+  file) without having been modified in any way. Name the files using the
+  convention: `raw/<data-source>/<timestamp>.csv` (or whatever format your data
+  is in).
+- `staging/`: The folder where processed data files are stored after they've
+  been tidied from `raw/` but before they've been converted into a resource in
+  `resources/`. The files in this folder can be used to actually create the
+  resource properties, as they will all be in a tidy format with their data
+  types and values more or less in their final form. Name the files using the
+  convention: `staging/<data-source>/<data-resource>/<timestamp>.parquet`
+  (Sprout requires Parquet).
+- `resources/`: The folder with your data resources. Each resource has its own
+  folder and a `data.parquet` file containing all resource data contained
   within.
 - `main.py`: The main Python file where you call all the functions for
   processing your data from raw to resource, where you formally list all
@@ -162,9 +162,8 @@ page of Sprout's design documentation.
 
 ### Creating package properties
 
-1. Run `main.py` to create the
-   `src/main_data/package_properties.py` file for the
-   properties of your data package by using the recipe in the
+1. Run `main.py` to create the `src/main_data/package_properties.py` file for
+   the properties of your data package by using the recipe in the
    [`justfile`](https://just.systems/man/en/):
 
    ```bash
@@ -173,9 +172,9 @@ page of Sprout's design documentation.
 
    You can also run `main.py` by clicking the "Run" button in your IDE.
 
-2. Open `src/main_data/package_properties.py` and fill in all
-   required fields. Also fill in any optional fields you find useful. You can
-   always update these later.
+2. Open `src/main_data/package_properties.py` and fill in all required fields.
+   Also fill in any optional fields you find useful. You can always update these
+   later.
 
 3. In `main.py`, uncomment the lines referencing the `package_properties` and
    `package_path` variables.
@@ -186,28 +185,28 @@ page of Sprout's design documentation.
 
 While you can create resource properties without data, it is a lot more
 challenging. If at all possible, only create a resource properties object when
-you have data or metadata to use to at least pre-fill in some of the important fields. In
-order to use Sprout, the data needs to already be in a tidy format. When it is
-in a tidy format, load the data as a [Polars](https://pola.rs) DataFrame into
-the `raw_data` variable in `main.py`.
+you have data or metadata to use to at least pre-fill in some of the important
+fields. In order to use Sprout, the data needs to already be in a tidy format.
+When it is in a tidy format, load the data as a [Polars](https://pola.rs)
+DataFrame into the `raw_data` variable in `main.py`.
 
-1. Uncomment lines up to and including the creation of the `resource_properties` variable.
+1. Uncomment lines up to and including the creation of the `resource_properties`
+   variable.
 
 2. Fill in the `resource_name` argument.
 
-3. Rerun `main.py` to create the
-   `src/main_data/resource_properties_<name>.py` file for the
-   properties of the new resource.
+3. Rerun `main.py` to create the `src/main_data/resource_properties_<name>.py`
+   file for the properties of the new resource.
 
-4. Open `src/main_data/resource_properties_<name>.py` and
-   follow the instructions inside. For example, fill in all required fields and
-   any optional fields you find useful. You can always update these later. Make
-   sure to save the file.
+4. Open `src/main_data/resource_properties_<name>.py` and follow the
+   instructions inside. For example, fill in all required fields and any
+   optional fields you find useful. You can always update these later. Make sure
+   to save the file.
 
-5. In `src/main_data/package_properties.py`, import your new
-   resource properties by uncommenting and updating the code with the name of your
-   resource. Also uncomment the `resources` field and update the name of the
-   resource properties in the array to match the name of your new resource.
+5. In `src/main_data/package_properties.py`, import your new resource properties
+   by uncommenting and updating the code with the name of your resource. Also
+   uncomment the `resources` field and update the name of the resource
+   properties in the array to match the name of your new resource.
 
 6. In `main.py`, import your new resource properties by uncommenting and
    updating the code with the name of your resource.
