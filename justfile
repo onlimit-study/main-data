@@ -11,7 +11,7 @@ format-all: format-md format-python
 check-all: check-spelling check-urls check-python check-unused check-security
 
 # Run all build-related recipes
-build-all: build-datapackage build-contributors build-website build-readme
+build-all: build-contributors build-website build-readme
 
 # List all TODO items in the repository
 list-todos:
@@ -82,8 +82,7 @@ check-unused:
   uvx vulture --min-confidence 100 src/ **/vulture-allowlist.py
 
 # Re-build the data package
-build-datapackage:
-  uv run main.py
+# build-datapackage:
 
 # Generate a Quarto include file with the contributors
 build-contributors:

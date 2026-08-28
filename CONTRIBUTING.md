@@ -79,7 +79,7 @@ This is a brief description of some of the files in this repository.
   package is structured like a Python package. The organization of the folder is
   up to you, but we recommend following a structure commonly found in data
   engineering projects, e.g. in
-  [dbt](https://docs.getdbt.com/docs/building-a-dbt-project/folder-structure)
+  [dbt](https://docs.getdbt.com/best-practices/how-we-structure/1-guide-overview?version=2)
   projects. We recommend that Python files only contain functions and classes
   for data processing, while the actual data processing is done in `main.py` to
   keep all the processing steps in one place.
