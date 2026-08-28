@@ -1,0 +1,9 @@
+---
+title: "Design"
+---
+
+This document describes some high-level details about where the data is coming
+from and how it is flowing through the build process. It also describes some
+specific things that need to be done to some types of data that aren't in the
+source data. REDCap data in particular requires a fair amount of processing to
+get into the right resource shape.

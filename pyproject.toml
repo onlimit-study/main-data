@@ -1,0 +1,54 @@
+[project]
+name = "onlimit-main-data"
+version = "0.1.0"
+description = """
+Data package of the ON LiMiT main study. The data itself is kept on GenomeDK at
+Aarhus University, Denmark and is not publicly accessible. The publicly
+accessible content of this data package is the documentation and metadata
+associated with the data.
+"""
+authors = [
+  { name = "Kristiane Beicher", email = "kris.beicher@clin.au.dk" },
+  { name = "Signe Kirk Brødbæk", email = "signekb@clin.au.dk" },
+  { name = "Daniel Ibsen", email = "dbi@ph.au.dk" },
+  { name = "Luke W. Johnston", email = "lwjohnst@gmail.com" },
+  { name = "Marton Vago", email = "marton.vago95@gmail.com" }
+]
+maintainers = [
+  { name = "Kristiane Beicher", email = "kris.beicher@clin.au.dk" },
+  { name = "Signe Kirk Brødbæk", email = "signekb@clin.au.dk" },
+  { name = "Daniel Ibsen", email = "dbi@ph.au.dk" },
+  { name = "Luke W. Johnston", email = "lwjohnst@gmail.com" },
+  { name = "Marton Vago", email = "marton.vago95@gmail.com" },
+]
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE-MIT.md"]
+requires-python = ">=3.12"
+dependencies = [
+    "polars>=1.44.1",
+    "seedcase-flower>=0.30.2",
+    "seedcase-sprout>=0.51.0",
+]
+
+[project.urls]
+homepage = "https://onlimit-study.github.io/main-data"
+repository = "https://github.com/onlimit-study/main-data"
+issues = "https://github.com/onlimit-study/main-data/issues"
+changelog = "https://github.com/onlimit-study/main-data/blob/main/CHANGELOG.md"
+
+[tool.ruff]
+extend = ".config/ruff.toml"
+
+[tool.mypy]
+python_version = 3.12
+strict = true
+
+[tool.pytask.ini_options]
+paths = ["src/main_data"]
+task_files = ["task_*.py", "build.py"]
+
+[dependency-groups]
+dev = [
+    "mypy>=2.3.1",
+]

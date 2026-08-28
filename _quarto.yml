@@ -1,0 +1,35 @@
+project:
+  type: onlimit-theme
+
+website:
+  title: "ON-LiMiT Main Data Package"
+  site-url: "https://onlimit-study.github.io/main-data"
+  repo-url: "https://github.com/onlimit-study/main-data"
+  navbar:
+    logo: "_extensions/onlimit-study/onlimit-theme/images/onlimit-apple.png"
+    logo-alt: "ON LiMiT logo"
+    pinned: true
+    left:
+      - text: "Overview"
+        href: index.qmd
+      - text: "Data Package"
+        href: docs/metadata/index.qmd
+    tools:
+      - icon: github
+        href: "https://github.com/onlimit-study/main-data"
+        aria-label: "GitHub icon: Source repository"
+  sidebar:
+    - id: overview
+      style: "docked"
+      contents:
+        - index.md
+        - CONTRIBUTING.md
+        - CHANGELOG.md
+    - id: package
+      style: "docked"
+      contents:
+        - text: "Package"
+          href: docs/metadata/index.qmd
+        - auto: docs/metadata/resources/
+
+format: onlimit-theme-html
