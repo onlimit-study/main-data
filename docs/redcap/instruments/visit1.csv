@@ -8,7 +8,7 @@ admin;relative_name_v1;visit_1;;text;Hvem?;;"Fx ""ægtefælle"" eller ""søster"
 ;visit_attention_points_v1;visit_1;;notes;Opmærksomhedspunkter for besøget;;;;;;;;;;;;;Documents any important notes, considerations, or issues relevant for the visit. Visit 1.
 admin;aim_screening_v1;visit_1;;radio;"<div class=""rich-text-field-label""><p>Har deltageren fået en gennemgang af formålet med informations- og screeningsbesøget?</p> <p><span style=""font-weight: normal;""><em>Se ""SOP - Inspirationssætninger til projektintro""</em></span></p></div>";1, Ja | 2, Nej;;;;;;;y;;;;;Whether the purpose of the screening visit has been explained by the study staff. Visit 1.
 admin;consent_info_read_v1;visit_1;"Informeret samtykke
-Der skal krydses ja på spørgsmål 1-7 for at deltageren kan inkluderes 
+Der skal krydses ja på spørgsmål 1-7 for at deltageren kan inkluderes
 ";radio;1. Har deltageren læst den skriftlige information?;1, Ja | 2, Nej;;;;;;;y;;;;;Whether the participant has read the written information. Visit 1.
 admin;consent_info_given_v1;visit_1;;radio;"<div class=""rich-text-field-label""><p>2. Er der givet mundtlig information om projektet, og hvad deltagelse indebærer? </p> <p><span style=""background-color: #bfedd2;"">OBS: Informér deltageren om, hvornår vægttabsfasen cirka kommer til at ligge for dem. Fx så de ved, at det vil strække sig over sommerferien. </span></p> <p><span style=""font-weight: normal;""><em>Se ""SOP - Inspirationssætninger til projektmedarbejder"" </em></span></p></div>";1, Ja | 2, Nej;;;;;;;y;;;;;Whether the participant has been informed about the purpose of the study and what it involves. Visit 1.
 admin;consent_24h_reflection_v1;visit_1;;radio;3. Er deltageren blevet gjort opmærksom på retten til min. 24 timers betænkningstid?;1, Ja | 2, Nej;;;;;;;y;;;;;Whether the participant has been informed of their right to a minimum of 24 hours to consider participation. Visit 1.
@@ -168,29 +168,29 @@ admin;wants_results_v1;visit_1;;radio;Ønsker deltageren at få sine resultater 
 ;hip_average_v;visit_1;;calc;Hoftemål, gennemsnit;([hip_1_v]+[hip_2_v])/2;;;;;;;y;;;;;The average of the two hip measurements in cm. Visit 4.
 ;waist_hip_ratio_v;visit_1;;calc;Talje-/hofteratio;round([waist_average_v]/[hip_average_v], 2);;;;;;;y;;;;;The waist hip ratio in cm. Calculated using the average of the 2 waist measurements and 2 hip measurements. Visit 4.
 admin;bp_information_v;visit_;Blodtryk;descriptive;"<div class=""rich-text-field-label""><p><span style=""background-color: #3598db;"">Første gang deltageren skal have målt blodtryk, skal det undersøges, om blodtrykket er ens på </span><br><span style=""background-color: #3598db;"">begge arme. Der måles</span></p> <ul> <li><span style=""background-color: #3598db;"">3 blodtryk på højre arm</span></li> <li><span style=""background-color: #3598db;"">3 blodtryk på venstre arm</span></li> </ul> <p><span style=""background-color: #3598db;"">Gennemsnittet udregnes ud fra de 2 sidste af de 3 målinger på hver arm. </span></p> <p><span style=""background-color: #3598db;"">Hvis forskellen er ≤10 mmHg systolisk, da anvendes den ikke-dominante arm.</span></p> <p><span style=""background-color: #3598db;"">Hvis forskellen er > 10 mmHg systolisk, bør der foretages yderligere måling i den oprindelige arm for at sikre, at forskellen er konsistent. Er forskellen fortsat > 10 mmHg systolisk, da </span><span style=""background-color: #3598db;"">anvendes armen med højest systolisk blodtryk til alle efterfølgende målinger. </span></p></div>";;;;;;;;;;;;;Descriptive text. First BP assessment only. Measure BP 3 times in each arm. Use the mean of the last 2 measurements on each arm. If systolic inter-arm difference is ≤10 mmHg, use the non-dominant arm. If >10 mmHg, repeat measurement in the original arm to confirm consistency. If still >10 mmHg, use the arm with the higher systolic BP for all subsequent measurements. Visit 2.
-;sys_bp_left-arm_1_measure_v;visit_;;text;Systolisk blodtryk venstre arm 1;;mmHg;number;60;260;;;y;;;;;"Systolic blood pressure in mmHg, left arm, first measurement. 
+;sys_bp_left-arm_1_measure_v;visit_;;text;Systolisk blodtryk venstre arm 1;;mmHg;number;60;260;;;y;;;;;"Systolic blood pressure in mmHg, left arm, first measurement.
 Participant sitting after approximately 5-10 minutes of rest. Visit 2."
-;dia_bp_left-arm_1_measure_v;visit_;;text;Diastolisk blodtryk venstre arm 1;;mmHg;number;30;150;;;y;;;;;"Diastolic blood pressure in mmHg, left arm, first measurement. 
+;dia_bp_left-arm_1_measure_v;visit_;;text;Diastolisk blodtryk venstre arm 1;;mmHg;number;30;150;;;y;;;;;"Diastolic blood pressure in mmHg, left arm, first measurement.
 Participant sitting after approximately 5-10 minutes of rest. Visit 2."
-;sys_bp_left-arm_2_measure_v;visit_;;text;Systolisk blodtryk venstre arm 2;;mmHg;number;60;260;;;y;;;;;"Systolic blood pressure in mmHg, left arm, second measurement. 
+;sys_bp_left-arm_2_measure_v;visit_;;text;Systolisk blodtryk venstre arm 2;;mmHg;number;60;260;;;y;;;;;"Systolic blood pressure in mmHg, left arm, second measurement.
 Participant sitting after approximately 5-10 minutes of rest. Visit 2."
-;dia_bp_left-arm_2_measure_v;visit_;;text;Diastolisk blodtryk venstre arm 2;;mmHg;number;30;150;;;y;;;;;"Diastolic blood pressure in mmHg, left arm, second measurement. 
+;dia_bp_left-arm_2_measure_v;visit_;;text;Diastolisk blodtryk venstre arm 2;;mmHg;number;30;150;;;y;;;;;"Diastolic blood pressure in mmHg, left arm, second measurement.
 Participant sitting after approximately 5-10 minutes of rest. Visit 2."
-;sys_bp_left-arm_3_measure_v;visit_;;text;Systolisk blodtryk venstre arm 3;;mmHg;number;60;260;;;y;;;;;"Systolic blood pressure in mmHg, left arm, third measurement. 
+;sys_bp_left-arm_3_measure_v;visit_;;text;Systolisk blodtryk venstre arm 3;;mmHg;number;60;260;;;y;;;;;"Systolic blood pressure in mmHg, left arm, third measurement.
 Participant sitting after approximately 5-10 minutes of rest. Visit 2."
-;dia_bp_left-arm_3_measure_v;visit_;;text;Diastolisk blodtryk venstre arm 3;;mmHg;number;30;150;;;y;;;;;"Diastolic blood pressure in mmHg, left arm, third measurement. 
+;dia_bp_left-arm_3_measure_v;visit_;;text;Diastolisk blodtryk venstre arm 3;;mmHg;number;30;150;;;y;;;;;"Diastolic blood pressure in mmHg, left arm, third measurement.
 Participant sitting after approximately 5-10 minutes of rest. Visit 2."
-;sys_bp_right-arm_1_measure_v;visit_;;text;Systolisk blodtryk højre arm 1;;mmHg;number;60;260;;;y;;;;;"Systolic blood pressure in mmHg, right arm, first measurement. 
+;sys_bp_right-arm_1_measure_v;visit_;;text;Systolisk blodtryk højre arm 1;;mmHg;number;60;260;;;y;;;;;"Systolic blood pressure in mmHg, right arm, first measurement.
 Participant sitting after approximately 5-10 minutes of rest. Visit 2."
-;dia_bp_right-arm_1_measure_v;visit_;;text;Diastolisk blodtryk højre arm 1;;mmHg;number;30;150;;;y;;;;;"Diastolic blood pressure in mmHg, right arm, first measurement. 
+;dia_bp_right-arm_1_measure_v;visit_;;text;Diastolisk blodtryk højre arm 1;;mmHg;number;30;150;;;y;;;;;"Diastolic blood pressure in mmHg, right arm, first measurement.
 Participant sitting after approximately 5-10 minutes of rest. Visit 2."
-;sys_bp_right-arm_2_measure_v;visit_;;text;Systolisk blodtryk højre arm 2;;mmHg;number;60;260;;;y;;;;;"Systolic blood pressure in mmHg, right arm, second measurement. 
+;sys_bp_right-arm_2_measure_v;visit_;;text;Systolisk blodtryk højre arm 2;;mmHg;number;60;260;;;y;;;;;"Systolic blood pressure in mmHg, right arm, second measurement.
 Participant sitting after approximately 5-10 minutes of rest. Visit 2."
-;dia_bp_right-arm_2_measure_v;visit_;;text;Diastolisk blodtryk højre arm 2;;mmHg;number;30;150;;;y;;;;;"Diastolic blood pressure in mmHg, right arm, second measurement. 
+;dia_bp_right-arm_2_measure_v;visit_;;text;Diastolisk blodtryk højre arm 2;;mmHg;number;30;150;;;y;;;;;"Diastolic blood pressure in mmHg, right arm, second measurement.
 Participant sitting after approximately 5-10 minutes of rest. Visit 2."
-;sys_bp_right-arm_3_measure_v;visit_;;text;Systolisk blodtryk højre arm 3;;mmHg;number;60;260;;;y;;;;;"Systolic blood pressure in mmHg, right arm, third measurement. 
+;sys_bp_right-arm_3_measure_v;visit_;;text;Systolisk blodtryk højre arm 3;;mmHg;number;60;260;;;y;;;;;"Systolic blood pressure in mmHg, right arm, third measurement.
 Participant sitting after approximately 5-10 minutes of rest. Visit 2."
-;dia_bp_right-arm_3_measure_v;visit_;;text;Diastolisk blodtryk højre arm 2;;mmHg;number;30;150;;;y;;;;;"Diastolic blood pressure in mmHg, right arm, third measurement. 
+;dia_bp_right-arm_3_measure_v;visit_;;text;Diastolisk blodtryk højre arm 2;;mmHg;number;30;150;;;y;;;;;"Diastolic blood pressure in mmHg, right arm, third measurement.
 Participant sitting after approximately 5-10 minutes of rest. Visit 2."
 ;sys_bp_left-arm_mean-value_v;visit_;;calc;Gennemsnit systolisk blodtryk, venstre arm;"if(
   [sys_bp_left_3_v2]<>'' and [sys_bp_left_2_v2]<>'',
@@ -215,11 +215,11 @@ Participant sitting after approximately 5-10 minutes of rest. Visit 2."
     )
   ))";mmHg;;;;;;y;;;;;Automatically calculated as the mean of two systolic BP measurements on right arm. Visit 2.
 admin;bp_chosen_arm_v;visit_;;radio;"<div class=""rich-text-field-label""><p>Hvilken arm tages blodtryk på fremadrettet? <br><br></p> <p><span style=""font-weight: normal;""><em>Hvis forskellen er > 10 mmHg systolisk, anvendes armen med højeste værdi til blodtryksmåling </em></span><br><span style=""font-weight: normal;""><em>fremadrettet. Hvis forskellen er < 10 mmHg systolisk, da anvendes den ikke-dominante arm.</em></span></p></div>";1, Venstre | 2, Højre;;;;;;;y;;;;;Arm used for future blood pressure measurements. Visit 2.
-;pulse_measure_1_v;visit_;;text;Puls 1;;bpm;number;30;200;;;y;;;;;"Pulse in bpm first measurement. 
+;pulse_measure_1_v;visit_;;text;Puls 1;;bpm;number;30;200;;;y;;;;;"Pulse in bpm first measurement.
 Participant sitting, measured after approximately 5-10 minutes of rest. Visit 4."
-;pulse_measure_2_v;visit_;;text;Puls 2;;bpm;number;30;200;;;y;;;;;"Pulse in bpm second measurement. 
+;pulse_measure_2_v;visit_;;text;Puls 2;;bpm;number;30;200;;;y;;;;;"Pulse in bpm second measurement.
 Participant sitting, measured after approximately 5-10 minutes of rest. Visit 4."
-;pulse_measure_3_v;visit_;;text;Puls 3;;bpm;number;30;200;;;y;;;;;"Pulse in bpm third measurement. 
+;pulse_measure_3_v;visit_;;text;Puls 3;;bpm;number;30;200;;;y;;;;;"Pulse in bpm third measurement.
 Participant sitting, measured after approximately 5-10 minutes of rest. Visit 4."
 ;pulse_mean-value_v;visit_;;calc;Puls, gennemsnit ;"if(
   [pulse_3_v4]<>'' and [pulse_2_v4]<>'',
@@ -279,15 +279,15 @@ Det vigtigste er, at du svarer så ærligt som muligt, så vi får et godt grund
 
 Instruktioner til spørgeskemaet:
 
-Angiv hvor mange episoder med tvangsoverspisning du har haft om ugen gennem de seneste tre måneder. 
-Tvangsoverspisning betyder, at du indenfor kort tid (fx to timer) spiser væsenligt mere, end hvad der er 
-normalt, og at du ikke kan kontrollere, hvor meget du spiser. 
+Angiv hvor mange episoder med tvangsoverspisning du har haft om ugen gennem de seneste tre måneder.
+Tvangsoverspisning betyder, at du indenfor kort tid (fx to timer) spiser væsenligt mere, end hvad der er
+normalt, og at du ikke kan kontrollere, hvor meget du spiser.
 
-Sæt kryds (""X"") ved hvor mange episoder med tvangsoverspisning du har haft om ugen. 
-Hvis det er forskelligt, hvor mange episoder med tvangsoverspisning du har haft om ugen, gennem de 
-seneste tre måneder, så angiv et gennemsnit (fx 20 episoder på 12 uger = 1-3 episoder om ugen). 
+Sæt kryds (""X"") ved hvor mange episoder med tvangsoverspisning du har haft om ugen.
+Hvis det er forskelligt, hvor mange episoder med tvangsoverspisning du har haft om ugen, gennem de
+seneste tre måneder, så angiv et gennemsnit (fx 20 episoder på 12 uger = 1-3 episoder om ugen).
 
-Har du ikke haft episoder med tvangsoverspisning indenfor de seneste tre måneder, skal du svare ""Nej"" i 
+Har du ikke haft episoder med tvangsoverspisning indenfor de seneste tre måneder, skal du svare ""Nej"" i
 alle spørgsmålene. Husk at besvare alle spørgsmålene.
 
 
